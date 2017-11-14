@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+".\exti_example\stm32f429i_discovery.o"
+".\exti_example\misc.o"
+".\exti_example\stm32f4xx_exti.o"
+".\exti_example\stm32f4xx_gpio.o"
+".\exti_example\stm32f4xx_dma.o"
+".\exti_example\stm32f4xx_rcc.o"
+".\exti_example\stm32f4xx_syscfg.o"
+".\exti_example\stm32f4xx_i2c.o"
+".\exti_example\main.o"
+".\exti_example\stm32f4xx_it.o"
+".\exti_example\system_stm32f4xx.o"
+".\exti_example\startup_stm32f429_439xx.o"
+--library_type=microlib --strict --scatter ".\EXTI_Example\EXTI_Example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI_Example.map" -o .\EXTI_Example\EXTI_Example.axf
