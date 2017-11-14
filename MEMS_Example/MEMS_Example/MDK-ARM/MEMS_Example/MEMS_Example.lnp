@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+".\mems_example\startup_stm32f429_439xx.o"
+".\mems_example\stm32f429i_discovery.o"
+".\mems_example\stm32f429i_discovery_lcd.o"
+".\mems_example\stm32f429i_discovery_sdram.o"
+".\mems_example\stm32f429i_discovery_l3gd20.o"
+".\mems_example\stm32f4xx_dma2d.o"
+".\mems_example\stm32f4xx_exti.o"
+".\mems_example\stm32f4xx_fmc.o"
+".\mems_example\stm32f4xx_gpio.o"
+".\mems_example\stm32f4xx_i2c.o"
+".\mems_example\stm32f4xx_ltdc.o"
+".\mems_example\stm32f4xx_rcc.o"
+".\mems_example\misc.o"
+".\mems_example\stm32f4xx_dma.o"
+".\mems_example\stm32f4xx_spi.o"
+".\mems_example\stm32f4xx_syscfg.o"
+".\mems_example\main.o"
+".\mems_example\stm32f4xx_it.o"
+".\mems_example\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\MEMS_Example\MEMS_Example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MEMS_Example.map" -o .\MEMS_Example\MEMS_Example.axf
